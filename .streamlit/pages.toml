@@ -1,1 +1,19 @@
- 
+[[pages]]
+path = "Home.py"
+name = "🏠 Home"
+icon = "🏠"
+
+[[pages]]
+path = "pages/1_2023_Dashboard.py"
+name = "LaLiga 2023"
+icon = "📊"
+
+[[pages]]
+path = "pages/2_2024_Dashboard.py"
+name = "LaLiga 2024"
+icon = "⚡"
+
+[[pages]]
+path = "pages/3_About_Me.py"
+name = "About"
+icon = "👤" 

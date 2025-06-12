@@ -1,6 +1,6 @@
 # La Liga Insight Dashboard
 
-An interactive dashboard for analyzing La Liga football statistics and trends, powered by FBref data.
+This is a side project for my passion for football, and it is an interactive dashboard for analyzing La Liga football statistics and trends, powered by FBref data.
 
 ## Features
 - 2023 Season Analysis

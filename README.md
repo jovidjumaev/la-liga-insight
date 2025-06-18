@@ -57,6 +57,23 @@ This project uses data from [FBref](https://fbref.com/), a comprehensive footbal
 
 2. Open your browser at `http://localhost:8501`
 
+## Keep Alive System
+To ensure the Streamlit app remains active with the new 12-hour inactivity threshold, this project includes an automated keep-alive system:
+
+### GitHub Actions Workflow
+- **Location**: `.github/workflows/keep-alive.yml`
+- **Schedule**: Runs every 10 hours automatically
+- **Action**: Creates an empty commit to trigger app activity
+- **Manual Trigger**: Can be manually triggered from GitHub Actions tab
+
+### Local Script (Optional)
+- **File**: `keep_alive.py`
+- **Usage**: `python keep_alive.py`
+- **Purpose**: Manual keep-alive if needed
+- **Features**: Error handling and status reporting
+
+The keep-alive system ensures your app stays running without manual intervention.
+
 ## Dashboard Sections
 1. **2023 Season Analysis**
    - Complete season statistics

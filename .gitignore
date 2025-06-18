@@ -30,5 +30,8 @@ notebooks/
 # Streamlit
 .streamlit/secrets.toml
 
+# Keep-alive files
+.last-update.txt
+
 # Data files (if you want to exclude them)
 # data/*.csv 

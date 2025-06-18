@@ -1,0 +1,18 @@
+name: Ping Streamlit App
+
+on:
+  schedule:
+    # Run every 10 hours (at 00:00, 10:00, 20:00 UTC)
+    - cron: '0 */10 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  ping-app:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Ping Streamlit App
+      run: |
+        echo "Pinging Streamlit app to keep it awake..."
+        curl -s -o /dev/null -w "HTTP Status: %{http_code}\n" https://mypersonalprojectbarca.streamlit.app/
+        echo "Ping completed at $(date -u +'%Y-%m-%d %H:%M:%S UTC')" 

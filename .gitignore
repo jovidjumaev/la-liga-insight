@@ -32,7 +32,6 @@ notebooks/
 
 # Keep-alive files
 .last-update.txt
-keep-alive-update.md
 
 # Data files (if you want to exclude them)
 # data/*.csv 

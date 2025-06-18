@@ -33,5 +33,6 @@ jobs:
     - name: Commit and push
       run: |
         git add keep-alive-update.md
-        git commit -m "🤖 Keep app alive - $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
-        git push 
+        git commit -m "🤖 Keep app alive - $(date -u +'%Y-%m-%d %H:%M:%S UTC')" || echo "No changes to commit"
+        git pull --rebase
+        git push --force 
